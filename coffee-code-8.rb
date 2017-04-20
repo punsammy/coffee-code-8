@@ -45,6 +45,18 @@ end
 #   prime_numbers
 # end
 
+#Checks if number is prime... doesnt work
+# def is_prime?(n)
+#   return false if n < 2
+#   return true if n == 2
+#   return false if n % 2
+#   factor = 3
+#   while factor < n/2
+#     return false if n % factor == 0
+#     factor += 2
+#   end
+#   true
+# end
 
 # require 'prime'
 #
