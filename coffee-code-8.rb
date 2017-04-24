@@ -17,6 +17,13 @@ def prime(number)
   primes
 end
 
+# def prime(number)
+#   prime_numbers = []
+#   sq_root = (number ** 0.5).to_i
+#   (2..number).each do |current_number|
+#
+# end
+
 # #Works up to 11
 # def prime(number)
 #   prime_numbers = []
@@ -68,5 +75,35 @@ end
 
 #Multiplication Table
 def multiplication_table(size)
-
+  table = []
+  size.times do |row|
+    table << []
+    size.times do |i|
+      table[row] << (row + 1) * (i + 1)
+    end
+  end
+  return table
 end
+
+
+#Multilpes of each number
+# def multiples(n, count)
+#     1.upto(count).map do |i|
+#       n * i
+#     end
+# end
+
+
+# def multiplication_table(size)
+#   [*1..size].each do |i|
+#
+#   end
+# end
+
+# def multiplication_table(size)
+#   table = size*size
+#   numbers = [*1..table]
+#   numbers.each do |row|
+#
+#   end
+# end
