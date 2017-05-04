@@ -86,6 +86,8 @@ def multiplication_table(size)
 end
 
 
+
+
 #Multilpes of each number
 # def multiples(n, count)
 #     1.upto(count).map do |i|
@@ -107,3 +109,16 @@ end
 #
 #   end
 # end
+
+
+#Question 3
+def get_squares(first_number, last_number)
+  n = (first_number..last_number).to_a
+  squares = []
+  n.each do |i|
+    if i % 2 == 0
+      squares << i
+    end
+  end
+  return squares
+end
